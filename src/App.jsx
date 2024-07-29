@@ -1,18 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Explorer from "./components/Explorer";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Github from "./pages/Github";
 import Titlebar from "./components/Titlebar";
-import Sidebar from "./components/SideBar";
+
+import Layout from "./components/Layout";
 
 const App = () => (
   <Router>
-    <Titlebar />
-    <Sidebar />
-    <Explorer />
+    <Layout />
+
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Image from "next/image"; // Optional: replace with standard <img> if not using Next.js
+
 import ChevronRight from "../components/icons/ChevronRight";
 import styles from "../styles/Explorer.module.css";
 
@@ -64,7 +64,7 @@ const Explorer = () => {
         >
           {explorerItems.map((item) => (
             <Link to={item.path} key={item.name} className={styles.file}>
-              <Image
+              <img
                 src={`/${item.icon}`}
                 alt={item.name}
                 height={18}
