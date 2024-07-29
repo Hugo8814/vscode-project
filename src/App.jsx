@@ -5,7 +5,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Github from "./pages/Github";
-import Titlebar from "./components/Titlebar";
 
 import Layout from "./components/Layout";
 
