@@ -42,10 +42,12 @@
   display: flex;
   align-items: center;
   font-size: 0.875rem;
+  text-decoration: none;
 }
 
 .file p {
   margin-left: 5px;
+  color: rgb(225, 228, 232);
 }
 
 .file:hover {

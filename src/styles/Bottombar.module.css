@@ -18,6 +18,9 @@
 .icon {
   margin-right: 4px;
 }
+/* .reacticon {
+  fill: beige !important;
+} */
 
 .container {
   display: flex;

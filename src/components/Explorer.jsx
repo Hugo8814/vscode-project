@@ -66,7 +66,7 @@ const Explorer = () => {
                 height={18}
                 width={18}
               />{" "}
-              <p>{item.name}</p>
+              <p className={styles.filename}>{item.name}</p>
             </Link>
           ))}
         </div>
