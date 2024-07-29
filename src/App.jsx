@@ -7,6 +7,8 @@ import Projects from "./pages/Projects";
 import Github from "./pages/Github";
 
 import Layout from "./components/Layout";
+import "./styles/themes.css";
+import "./styles/globals.css";
 
 const App = () => (
   <Router>
