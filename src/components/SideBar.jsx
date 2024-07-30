@@ -1,3 +1,5 @@
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import FilesIcon from "./icons/FilesIcon";
 import GithubIcon from "./icons/GithubIcon";
 import CodeIcon from "./icons/CodeIcon";
@@ -42,20 +44,48 @@ const sidebarBottomItems = [
 ];
 
 const Sidebar = () => {
+  const location = useLocation();
+
   return (
     <aside className={styles.sidebar}>
       <div className={styles.sidebarTop}>
-        {sidebarTopItems.map(({ Icon }, index) => (
-          <div key={index} className={styles.iconContainer}>
-            <Icon fill={"rgb(225, 228, 232)"} className={styles.icon} />
-          </div>
+        {sidebarTopItems.map(({ Icon, path }) => (
+          <Link to={path} key={path}>
+            <div
+              className={`${styles.iconContainer} ${
+                location.pathname === path ? styles.active : ""
+              }`}
+            >
+              <Icon
+                fill={
+                  location.pathname === path
+                    ? "rgb(225, 228, 232)"
+                    : "rgb(106, 115, 125)"
+                }
+                className={styles.icon}
+              />
+            </div>
+          </Link>
         ))}
       </div>
       <div className={styles.sidebarBottom}>
-        {sidebarBottomItems.map(({ Icon }, index) => (
-          <div key={index} className={styles.iconContainer}>
-            <Icon fill={"rgb(225, 228, 232)"} className={styles.icon} />
-          </div>
+        {sidebarBottomItems.map(({ Icon, path }) => (
+          <Link to={path} key={path}>
+            <div
+              className={`${styles.iconContainer} ${
+                location.pathname === path ? styles.active : ""
+              }`}
+            >
+              <Icon
+                fill={
+                  location.pathname === path
+                    ? "rgb(225, 228, 232)"
+                    : "rgb(106, 115, 125)"
+                }
+                className={styles.icon}
+              />
+            </div>
+          </Link>
         ))}
       </div>
     </aside>
