@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import FilesIcon from "./icons/FilesIcon";
 import GithubIcon from "./icons/GithubIcon";
