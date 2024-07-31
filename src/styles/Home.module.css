@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 4rem);
+  grid-template-rows: repeat(auto-fill, 4rem);
+
+  margin: 0 auto;
+
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  background: linear-gradient(
+        90deg,
+        var(--line) 1px,
+        transparent 1px var(--size)
+      )
+      0 -5vmin / var(--size) var(--size),
+    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 0 -5vmin / var(
+        --size
+      ) var(--size);
+  mask: linear-gradient(-15deg, transparent 30%, white);
+}
+.item {
+  background-color: #121212;
+  width: 4rem;
+  height: 4rem;
+  border-top: solid 0.01px #333333;
+  border-left: solid 0.01px #333333;
+  box-sizing: border-box;
+}
+.title {
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+
+  text-align: center;
+  position: absolute;
+
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}

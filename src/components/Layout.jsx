@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // useLocation from react-router-dom
 import Titlebar from "./Titlebar";
 import Sidebar from "./SideBar";
@@ -6,7 +7,7 @@ import Bottombar from "./Bottombar";
 import Tabsbar from "./Tabsbar";
 import styles from "../styles/Layout.module.css";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <>
       <Titlebar />
@@ -15,6 +16,9 @@ const Layout = () => {
         <Explorer />
         <div style={{ width: "100%" }}>
           <Tabsbar />
+          <main id="main-editor" className={styles.content}>
+            {children}
+          </main>
         </div>
       </div>
       <Bottombar />
