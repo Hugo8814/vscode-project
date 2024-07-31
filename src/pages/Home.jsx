@@ -36,10 +36,10 @@ function Home() {
 
     setIsGoing(true);
     let count = 0;
-    let globalCount = 0;
     let canChange = false;
     const INITIAL_WORD = initialText;
 
+    // Start with a random word
     let randomWord = getRandomWord(INITIAL_WORD);
     setText(randomWord);
 
@@ -53,21 +53,26 @@ function Home() {
         }
       }
       setText(finalWord);
+
       if (canChange) {
         count++;
       }
-      if (globalCount >= 20) {
-        canChange = true;
-      }
-      if (count >= INITIAL_WORD.length) {
+
+      // Stop changing characters after 1 second (10 iterations at 50ms each)
+      if (count >= INITIAL_WORD.length || Date.now() - startTime > 1000) {
         clearInterval(interv);
         setText(INITIAL_WORD);
         setIsGoing(false);
       }
-      globalCount++;
-    }, 50);
-  };
 
+      // Ensure we start changing characters after a brief delay
+      if (Date.now() - startTime > 200) {
+        canChange = true;
+      }
+    }, 70);
+
+    const startTime = Date.now(); // Record the start time of the animation
+  };
   useEffect(() => {
     const wordElement1 = wordRef1.current;
     const wordElement2 = wordRef2.current;
@@ -102,8 +107,8 @@ function Home() {
   }, [isGoing1, isGoing2]);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.bg}>
+    <div className={styles.bg}>
+      <div className={styles.container}>
         {items}
         <div className={styles.title}>
           <p className={styles.title1} ref={wordRef1}>
@@ -112,6 +117,10 @@ function Home() {
           <p className={styles.title2} ref={wordRef2}>
             {text2}
           </p>
+          <div className={styles.btnBox}>
+            <button className={styles.viewButton}>View Projects</button>
+            <button className={styles.contactButton}>Contact Me</button>
+          </div>
         </div>
       </div>
     </div>
