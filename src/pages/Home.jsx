@@ -3,70 +3,42 @@ import { useState, useEffect, useRef } from "react";
 import styles from "../styles/Home.module.css";
 
 function Home() {
-  const [text, setText] = useState("Hugo Pereira \n Frontend Developer");
-  const [isGoing, setIsGoing] = useState(false);
-  const wordRef = useRef(null);
-  const items = Array.from(
-    { length: 5000 },
-    (
-      _,
-      index // Adjust the number of items
-    ) => <div key={index} className={styles.item}></div>
-  );
+  const [text1, setText1] = useState("Hugo Pereira");
+  const [text2, setText2] = useState("Frontend Developer");
+  const [isGoing1, setIsGoing1] = useState(false);
+  const [isGoing2, setIsGoing2] = useState(false);
+  const wordRef1 = useRef(null);
+  const wordRef2 = useRef(null);
+
+  const items = Array.from({ length: 5000 }, (_, index) => (
+    <div key={index} className={styles.item}></div>
+  ));
 
   const rand = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
 
   const getRandomLetter = () => {
-    const alphabet = [
-      "a",
-      "b",
-      "c",
-      "d",
-      "e",
-      "f",
-      "g",
-      "h",
-      "i",
-      "j",
-      "k",
-      "l",
-      "m",
-      "n",
-      "o",
-      "p",
-      "q",
-      "r",
-      "s",
-      "t",
-      "u",
-      "v",
-      "w",
-      "x",
-      "y",
-      "z",
-    ];
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
     return alphabet[rand(0, alphabet.length - 1)];
   };
 
   const getRandomWord = (word) => {
-    let text = word;
     let finalWord = "";
-    for (let i = 0; i < text.length; i++) {
-      finalWord += text[i] === " " ? " " : getRandomLetter();
+    for (let i = 0; i < word.length; i++) {
+      finalWord += word[i] === " " ? " " : getRandomLetter();
     }
     return finalWord;
   };
 
-  const init = () => {
+  const animateText = (setText, initialText, setIsGoing, wordRef, isGoing) => {
     if (isGoing) return;
 
     setIsGoing(true);
     let count = 0;
     let globalCount = 0;
     let canChange = false;
-    const INITIAL_WORD = text;
+    const INITIAL_WORD = initialText;
 
     let randomWord = getRandomWord(INITIAL_WORD);
     setText(randomWord);
@@ -97,20 +69,50 @@ function Home() {
   };
 
   useEffect(() => {
-    const wordElement = wordRef.current;
-    wordElement.addEventListener("mouseenter", init);
+    const wordElement1 = wordRef1.current;
+    const wordElement2 = wordRef2.current;
+
+    wordElement1.addEventListener("mouseenter", () =>
+      animateText(setText1, "Hugo Pereira", setIsGoing1, wordRef1, isGoing1)
+    );
+    wordElement2.addEventListener("mouseenter", () =>
+      animateText(
+        setText2,
+        "Frontend Developer",
+        setIsGoing2,
+        wordRef2,
+        isGoing2
+      )
+    );
+
     return () => {
-      wordElement.removeEventListener("mouseenter", init);
+      wordElement1.removeEventListener("mouseenter", () =>
+        animateText(setText1, "Hugo Pereira", setIsGoing1, wordRef1, isGoing1)
+      );
+      wordElement2.removeEventListener("mouseenter", () =>
+        animateText(
+          setText2,
+          "Frontend Developer",
+          setIsGoing2,
+          wordRef2,
+          isGoing2
+        )
+      );
     };
-  }, []);
+  }, [isGoing1, isGoing2]);
 
   return (
     <div className={styles.container}>
       <div className={styles.bg}>
         {items}
-        <p className={styles.title} ref={wordRef}>
-          {text}
-        </p>
+        <div className={styles.title}>
+          <p className={styles.title1} ref={wordRef1}>
+            {text1}
+          </p>
+          <p className={styles.title2} ref={wordRef2}>
+            {text2}
+          </p>
+        </div>
       </div>
     </div>
   );
