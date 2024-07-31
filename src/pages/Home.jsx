@@ -106,10 +106,12 @@ function Home() {
 
   return (
     <div className={styles.container}>
-      {items}
-      <p className={styles.title} ref={wordRef}>
-        {text}
-      </p>
+      <div className={styles.bg}>
+        {items}
+        <p className={styles.title} ref={wordRef}>
+          {text}
+        </p>
+      </div>
     </div>
   );
 }

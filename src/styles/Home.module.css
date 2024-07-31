@@ -1,4 +1,12 @@
 .container {
+  margin: 0 auto;
+
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+.bg {
   display: grid;
   grid-template-columns: repeat(auto-fill, 4rem);
   grid-template-rows: repeat(auto-fill, 4rem);
@@ -8,16 +16,6 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
-
-  background: linear-gradient(
-        90deg,
-        var(--line) 1px,
-        transparent 1px var(--size)
-      )
-      0 -5vmin / var(--size) var(--size),
-    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 0 -5vmin / var(
-        --size
-      ) var(--size);
   mask: linear-gradient(-15deg, transparent 30%, white);
 }
 .item {
