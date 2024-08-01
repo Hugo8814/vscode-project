@@ -3,6 +3,7 @@ import audiophile from "../img/audiophile.png";
 import githubSvg from "../components/icons/github.svg";
 import linkSvg from "../components/icons/link.svg";
 import countryApi from "../img/countryApi.png";
+import img from "../img/img.png";
 
 function Projects() {
   return (
@@ -16,10 +17,13 @@ function Projects() {
             alt="project img"
           />
           <div className={styles.overlay}>
-            <a href="#" className="btn">
+            <a href="https://audiophile-hugo.netlify.app/" className="btn">
               <img src={linkSvg} alt="link logo" className={styles.link} />
             </a>
-            <a href="#" className="btn">
+            <a
+              href="https://github.com/Hugo8814/vscode-project"
+              className="btn"
+            >
               <img
                 src={githubSvg}
                 alt="github logo"
@@ -53,11 +57,11 @@ function Projects() {
       </div>
 
       <div className={styles.projects}>
-        <div className={styles.title}>Countries Api</div>
+        <div className={styles.title}>Coming soon</div>
         <div className={styles.box}>
           <img
-            className={styles.projectsImg}
-            src={countryApi}
+            className={`${styles.projectsImg} ${styles.bulr}`}
+            src={img}
             alt="project img"
           />
           <div className={styles.overlay}>

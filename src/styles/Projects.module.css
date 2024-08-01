@@ -47,7 +47,9 @@
 .box:hover .overlay {
   opacity: 1;
 }
-
+.bulr {
+  filter: blur(5px);
+}
 .btn {
   padding: 10px 20px;
   margin: 10px;
