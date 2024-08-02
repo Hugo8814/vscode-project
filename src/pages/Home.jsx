@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect, useRef } from "react";
 import styles from "../styles/Home.module.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [text1, setText1] = useState("Hugo Pereira");
@@ -118,8 +119,12 @@ function Home() {
             {text2}
           </p>
           <div className={styles.btnBox}>
-            <button className={styles.viewButton}>View Projects</button>
-            <button className={styles.contactButton}>Contact Me</button>
+            <Link to={"/projects"}>
+              <button className={styles.viewButton}>View Projects</button>
+            </Link>
+            <Link to={"/contact"}>
+              <button className={styles.contactButton}>Contact Me</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,14 @@
-function projects() {
-  return <div>coming soon....</div>;
+import styles from "../styles/Projects.module.css";
+import audiophile from "../img/audiophile.png";
+
+function Projects() {
+  return (
+    <div className={styles.container}>
+      <div className={styles.projects}>
+        <img src={audiophile} alt="project img" />
+      </div>
+    </div>
+  );
 }
 
-export default projects;
+export default Projects;
