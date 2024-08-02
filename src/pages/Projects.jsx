@@ -1,6 +1,8 @@
 import styles from "../styles/Projects.module.css";
 import audiophile from "../img/audiophile.png";
 import { useState } from "react";
+import githubSvg from "../components/icons/github.svg";
+import linkSvg from "../components/icons/link.svg";
 
 function Projects() {
   const [hover, setHover] = useState(false);
@@ -21,10 +23,14 @@ function Projects() {
           {hover && (
             <div className={styles.overlay}>
               <a href="#" className="btn">
-                Link 1
+                <img src={linkSvg} alt="github logo" className={styles.link} />
               </a>
               <a href="#" className="btn">
-                Link 2
+                <img
+                  src={githubSvg}
+                  alt="github logo"
+                  className={styles.github}
+                />
               </a>
             </div>
           )}

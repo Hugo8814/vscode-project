@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
       <div className={styles.main}>
         <Sidebar />
         <Explorer />
-        <div style={{ width: "100%" }}>
+        <div style={{ width: "100%" }} className={styles.box}>
           <Tabsbar />
           <main id="main-editor" className={styles.content}>
             {children}
