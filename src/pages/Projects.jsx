@@ -2,8 +2,9 @@ import styles from "../styles/Projects.module.css";
 import audiophile from "../img/audiophile.png";
 import githubSvg from "../components/icons/github.svg";
 import linkSvg from "../components/icons/link.svg";
-import countryApi from "../img/countryApi.png";
+//import countryApi from "../img/countryApi.png";
 import img from "../img/img.png";
+import img2 from "../img/im2.png";
 
 function Projects() {
   return (
@@ -36,16 +37,15 @@ function Projects() {
       <div className={styles.projects}>
         <div className={styles.title}>Countries Api</div>
         <div className={styles.box}>
-          <img
-            className={styles.projectsImg}
-            src={countryApi}
-            alt="project img"
-          />
+          <img className={styles.projectsImg} src={img2} alt="project img" />
           <div className={styles.overlay}>
-            <a href="#" className="btn">
+            <a href="" className="btn">
               <img src={linkSvg} alt="link logo" className={styles.link} />
             </a>
-            <a href="#" className="btn">
+            <a
+              href="https://github.com/Hugo8814/rest-countries-api-with-color-theme-switcher-master"
+              className="btn"
+            >
               <img
                 src={githubSvg}
                 alt="github logo"

@@ -2,7 +2,7 @@
   display: grid;
 
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  grid-template-rows: auto;
+  grid-template-rows: repeat(auto-fit, 1fr);
   gap: 2rem;
   padding: 2rem;
 }
@@ -22,7 +22,8 @@
 }
 
 .projectsImg {
-  width: 100%;
+  width: 461px;
+  height: 250px;
 
   transition: filter 0.3s ease;
 }
