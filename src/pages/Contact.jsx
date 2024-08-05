@@ -2,54 +2,30 @@ import styles from "../styles/ContactCode.module.css";
 
 const contactItems = [
   {
-    social: "website",
-    link: "nitinranganath.me",
-    href: "https://nitinranganath.me",
-  },
-  {
     social: "email",
-    link: "nitinranganath@gmail.com",
-    href: "mailto:nitinranganath@gmail.com",
+    link: "hugopereira8814@gmail.com",
+    href: "mailto:hugopereira8814@gmail.com",
   },
   {
     social: "github",
-    link: "itsnitinr",
-    href: "https://github.com/itsnitinr",
+    link: "Hugo8814",
+    href: "https://github.com/Hugo8814",
   },
   {
     social: "linkedin",
-    link: "nitinranganath",
-    href: "https://www.linkedin.com/in/nitinranganath/",
+    link: "Hugo Pereira",
+    href: "https://www.linkedin.com/in/hugo-pereira-4800322b5/",
+  },
+
+  {
+    social: "LeetCode",
+    link: "hugopereira8814",
+    href: "https://leetcode.com/u/hugopereira8814/",
   },
   {
-    social: "twitter",
-    link: "iamnitinr",
-    href: "https://www.twitter.com/iamnitinr",
-  },
-  {
-    social: "instagram",
-    link: "iamnitinr",
-    href: "https://www.instagram.com/iamnitinr",
-  },
-  {
-    social: "polywork",
-    link: "nitinranganath",
-    href: "https://www.polywork.com/nitinranganath",
-  },
-  {
-    social: "telegram",
-    link: "iamnitinr",
-    href: "https://t.me/iamnitinr",
-  },
-  {
-    social: "codepen",
-    link: "nitinranganath",
-    href: "https://codepen.io/itsnitinr",
-  },
-  {
-    social: "codesandbox",
-    link: "itsnitinr",
-    href: "https://codesandbox.io/u/itsnitinr",
+    social: "HackerRank",
+    link: "@hugopereira8814",
+    href: "https://www.hackerrank.com/profile/hugopereira8814",
   },
 ];
 

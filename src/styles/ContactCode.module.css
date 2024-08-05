@@ -1,7 +1,7 @@
 .code {
   counter-reset: line;
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
 }
 
 .line::before {
