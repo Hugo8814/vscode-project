@@ -8,6 +8,7 @@ import htmlSVG from "../components/icons/html-5.svg";
 import cssSVG from "../components/icons/css-3.svg";
 import reactSVG from "../components/icons/react.svg";
 import gitSVG from "../components/icons/git.svg";
+import sassCert from "../img/sassCert.jpg";
 function Skills() {
   return (
     <div className={styles.skillsPage}>
@@ -43,10 +44,7 @@ function Skills() {
           <img className={styles.certsimg} src={jsUdemy} alt="" />
         </div>
         <div className={styles.certs}>
-          <img className={styles.certsimg} src={jsimg} alt="" />
-        </div>
-        <div className={styles.certs}>
-          <img className={styles.certsimg} src={jsimg} alt="" />
+          <img className={styles.certsimg} src={sassCert} alt="" />
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@
 .skillsTitle {
   font-size: 2rem;
   padding: 1rem;
+  font-weight: 600;
 }
 .skills {
   width: 100%;
@@ -31,21 +32,19 @@
 
 .certsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 25rem));
   grid-template-rows: repeat(auto-fit, 1fr);
   gap: 2rem;
-
-  justify-content: center;
-  align-items: center;
 }
 
 .certs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .certsimg {
   width: 100%;
   height: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
 }

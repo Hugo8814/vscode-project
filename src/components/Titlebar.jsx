@@ -23,7 +23,10 @@ const Titlebar = () => {
       <div className={styles.windowButtons}>
         <span className={styles.minimize}></span>
         <span className={styles.maximize}></span>
-        <span className={styles.close}></span>
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          className={styles.close}
+        ></a>
       </div>
     </section>
   );
