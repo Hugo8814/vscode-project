@@ -48,3 +48,9 @@
   border-radius: 0.5rem;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 401px) {
+  .skillsGrid {
+    justify-content: center;
+  }
+}

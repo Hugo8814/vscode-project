@@ -1,6 +1,6 @@
 .pre {
   background-color: var(--main-bg);
-  color: #f8f8f2;
+  color: var(--text-color);
   padding: 16px;
   border-radius: 8px;
   overflow-x: auto;
@@ -12,14 +12,16 @@
 
 .lineContainer {
   display: flex;
+  align-items: flex-start;
 }
 
 .lineNumber {
   width: 30px;
   text-align: right;
   margin-right: 16px;
-  color: rgb(131, 131, 131);
+  color: var(--line-number-color);
   user-select: none; /* Prevents line numbers from being selected */
+  flex-shrink: 0;
 }
 
 .code {
@@ -28,22 +30,23 @@
 
 /* Syntax highlighting */
 .doctype {
-  color: #c71163;
+  color: var(--doctype-color);
 }
 .tag {
-  color: #c71163;
+  color: var(--tag-color);
 }
 .attr-name {
-  color: #1bc02c;
+  color: var(--attr-name-color);
 }
 .attr-value {
-  color: #e1e434;
+  color: var(--attr-value-color);
 }
 .punctuation {
-  color: #d4d4d4;
+  color: var(--punctuation-color);
 }
 .plain {
-  color: #d4d4d4;
+  color: var(--plain-color);
+  max-width: 60rem;
 }
 
 /* Media query for responsive design */
