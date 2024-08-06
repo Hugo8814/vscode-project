@@ -27,8 +27,8 @@ const explorerItems = [
   },
 
   {
-    name: "github.md",
-    path: "/github",
+    name: "skills.md",
+    path: "/skills",
     icon: "markdown_icon.svg",
   },
 ];
