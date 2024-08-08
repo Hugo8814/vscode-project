@@ -39,10 +39,7 @@ function Projects() {
         <div className={styles.box}>
           <img className={styles.projectsImg} src={img2} alt="project img" />
           <div className={styles.overlay}>
-            <a
-              href="https://hugo8814.github.io/rest-countries-api-with-color-theme-switcher-master/"
-              className="btn"
-            >
+            <a href="https://countries-api-hugo.netlify.app/" className="btn">
               <img src={linkSvg} alt="link logo" className={styles.link} />
             </a>
             <a
