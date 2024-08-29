@@ -19,6 +19,15 @@
 }
 .box {
   position: relative;
+
+  height: 229px;
+}
+@media (max-width: 1000px) {
+  .box {
+    position: relative;
+
+    height: auto;
+  }
 }
 
 .projectsImg {
