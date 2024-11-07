@@ -9,6 +9,8 @@ import cssSVG from "../components/icons/css-3.svg";
 import reactSVG from "../components/icons/react.svg";
 import gitSVG from "../components/icons/git.svg";
 import sassCert from "../img/sassCert.jpg";
+import reduxSVG from "../components/icons/redux.svg";
+import tailwindSVG from "../components/icons/tailwind.svg";
 function Skills() {
   return (
     <div className={styles.skillsPage}>
@@ -29,6 +31,13 @@ function Skills() {
 
         <div className={styles.skills}>
           <img className={styles.skillsimg} src={reactSVG} alt="" />
+        </div>
+
+        <div className={styles.skills}>
+          <img className={styles.skillsimg} src={reduxSVG} alt="" />
+        </div>
+        <div className={styles.skills}>
+          <img className={styles.skillsimg} src={tailwindSVG} alt="" />
         </div>
         <div className={styles.skills}>
           <img className={styles.skillsimg} src={gitSVG} alt="" />
