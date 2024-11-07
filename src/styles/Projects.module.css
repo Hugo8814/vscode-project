@@ -7,9 +7,11 @@
   padding: 2rem;
 }
 .title {
+  border-radius: 1rem 1rem 0 0;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  background-color: #1f2428;
 }
 
 .projects {
@@ -82,4 +84,27 @@
 .link {
   width: 2rem;
   height: 2rem;
+}
+
+.skills {
+  width: 100%;
+  height: 100%;
+  background: #1f2428;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+}
+.skillsimg {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.skillsGrid {
+  border-radius: 0 0 1rem 1rem;
+  padding: 0.3rem;
+  background: #1f2428;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 20px));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 1rem;
 }
