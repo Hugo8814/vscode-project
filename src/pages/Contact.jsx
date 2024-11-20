@@ -7,7 +7,7 @@ const contactItems = [
     href: "mailto:hugopereira8814@gmail.com",
   },
   {
-    social: "github",
+    social: "github (currently being reinstated)",
     link: "Hugo8814",
     href: "https://github.com/Hugo8814",
   },
