@@ -68,10 +68,14 @@ function Projects() {
           <div className={styles.skills}>
             <img className={styles.skillsimg} src={nodejsSVG} alt="" />
           </div>
+          <div className={styles.skills}>
+            <img className={styles.skillsimg} src={expressSVG} alt="" />
+          </div>
 
           <div className={styles.skills}>
             <img className={styles.skillsimg} src={mongoSVG} alt="" />
           </div>
+         
         </div>
       </div>
 
