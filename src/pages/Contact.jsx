@@ -7,7 +7,7 @@ const contactItems = [
     href: "mailto:hugopereira8814@gmail.com",
   },
   {
-    social: "github ",
+    social: "github",
     link: "Hugo8814",
     href: "https://github.com/Hugo8814",
   },
@@ -59,3 +59,5 @@ function Contact() {
 }
 
 export default Contact;
+
+
