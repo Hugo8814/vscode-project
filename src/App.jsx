@@ -9,6 +9,8 @@ import Layout from "./components/Layout";
 import "./styles/themes.css";
 import "./styles/globals.css";
 import Skills from "./pages/Skills";
+import Pfa from "./pages/Pfa";
+import Audiophile from "./pages/Audiophile";
 
 const App = () => (
   <Router>
@@ -19,6 +21,8 @@ const App = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/Personalfinance" element={<Pfa />} />
+        <Route path="/Audiophile" element={<Audiophile />} />
       </Routes>
     </Layout>
   </Router>

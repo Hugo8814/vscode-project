@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import ChevronRight from "../components/icons/ChevronRight";
 import styles from "../styles/Explorer.module.css";
+import ProjectFolder from "./ProjectFolder";
 
 const explorerItems = [
   {
@@ -20,17 +21,7 @@ const explorerItems = [
     path: "/contact",
     icon: "css_icon.svg",
   },
-  {
-    name: "projects.js",
-    path: "/projects",
-    icon: "js_icon.svg",
-  },
-
-  {
-    name: "skills.md",
-    path: "/skills",
-    icon: "markdown_icon.svg",
-  },
+ 
 ];
 
 const Explorer = () => {
@@ -69,6 +60,23 @@ const Explorer = () => {
               <p className={styles.filename}>{item.name}</p>
             </Link>
           ))}
+          <ProjectFolder />
+          <Link to="/skills" key="skills" className={styles.file}>
+              <img
+                src="/markdown_icon.svg"
+                alt="skills"
+                height={18}
+                width={18}
+              />{" "}
+              <p className={styles.filename}>skills.md</p>
+            </Link>
+
+
+          {/* {
+    name: "skills.md",
+    path: "/skills",
+    icon: "markdown_icon.svg",
+  }, */}
         </div>
       </div>
     </div>

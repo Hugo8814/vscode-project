@@ -1,18 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap");
 .box {
+  
+  
+
 }
 .main {
   display: flex;
   background: var(--main-bg);
+  
 }
 
 .content {
   color: var(--text-color);
   font-family: "JetBrains Mono", monospace;
   flex: 1;
-  height: 85vh;
+  height: 90vh;
   overflow-y: auto;
   scroll-behavior: smooth;
+  
 }
 
 .content {
