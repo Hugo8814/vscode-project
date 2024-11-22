@@ -12,12 +12,12 @@ function Audiophile() {
 
             <div className={styles.linkBox} >
             
-            <a href="https://pfa-hugo.netlify.app/" className={styles.link}>
+            <a href="https://audiophile-hugo.netlify.app/" className={styles.link}>
             View Live
               <img src={linkSvg} alt="link logo" className={styles.icon}  />
             </a>
             
-            <a href="https://github.com/Hugo8814/PFA"  className={styles.github}>
+            <a href="https://github.com/Hugo8814/audiophile"  className={styles.github}>
              Source Code
               <img
                 src={githubSvg}
