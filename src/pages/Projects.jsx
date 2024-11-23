@@ -32,18 +32,7 @@ function Projects() {
             alt="project img"
           />
 
-          <div className={styles.overlay}>
-            <a href="https://pfa-hugo.netlify.app/" className="btn">
-              <img src={linkSvg} alt="link logo" className={styles.link} />
-            </a>
-            <a href="https://github.com/Hugo8814/WMC" className="btn">
-              <img
-                src={githubSvg}
-                alt="github logo"
-                className={styles.github}
-              />
-            </a>
-          </div>
+          
         </div>
         <div className={styles.skillsGrid}>
           <div className={styles.skills}>
