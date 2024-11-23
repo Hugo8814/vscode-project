@@ -8,7 +8,7 @@ import linkSvg from "../components/icons/link.svg";
 function Audiophile() {
     return (
         <div className={styles.pfa}>
-            <p className={styles.title}>Personal Financial App</p>
+            <p className={styles.title}>Audiophile</p>
 
             <div className={styles.linkBox} >
             
