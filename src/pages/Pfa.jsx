@@ -12,18 +12,17 @@ function Pfa() {
 
             <div className={styles.linkBox} >
             
-            <a href="https://pfa-hugo.netlify.app/" className={styles.link}>
+            <a href="https://pfa-hugo.netlify.app/" target="_blank" rel="noopener noreferrer" className={styles.link}>
             View Live
               <img src={linkSvg} alt="link logo" className={styles.icon}  />
             </a>
             
-            <a href="https://github.com/Hugo8814/PFA"  className={styles.github}>
+            <a href="https://github.com/Hugo8814/PFA" target="_blank" rel="noopener noreferrer"  className={styles.github}>
              Source Code
               <img
                 src={githubSvg}
                 alt="github logo"
                 className={styles.icon}
-               
               />
             </a>
             </div>
@@ -39,7 +38,7 @@ function Pfa() {
                         Offers features like budgeting, expense tracking, and financial planning through an intuitive interface.
                     </li>
                     <li className={styles.text}>
-                        Demonstrates my expertise in front-end development, leveraging modern technologies to deliver a smooth and engaging user experience.
+                        Demonstrates my skiils in front-end development, leveraging modern technologies to deliver a smooth and engaging user experience.
                     </li>
                 </ul>
             </div>
@@ -51,7 +50,10 @@ function Pfa() {
                         Built with React, utilizing advanced concepts like React Hooks, React Router, and Redux for efficient state management.
                     </li>
                     <li className={styles.text}>
-                        Designed and styled with Tailwind CSS, implemented based on a Figma.
+                        Designed and styled with Tailwind CSS, implemented based on a Figma design.
+                    </li>
+                    <li className={styles.text}>
+                        Utilized the **Recharts** library to create interactive and visually appealing pie charts for expense breakdowns.
                     </li>
                 </ul>
                 <img src={Transaction} alt="Transaction Management Screenshot" className={styles.img} />

@@ -11,6 +11,8 @@ import "./styles/globals.css";
 import Skills from "./pages/Skills";
 import Pfa from "./pages/Pfa";
 import Audiophile from "./pages/Audiophile";
+import WelfareMC from "./pages/WelfareMC";
+import Countries from "./pages/Countries";
 
 const App = () => (
   <Router>
@@ -21,8 +23,11 @@ const App = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/Personalfinance" element={<Pfa />} />
+        <Route path="/PersonalFinance" element={<Pfa />} />
         <Route path="/Audiophile" element={<Audiophile />} />
+        <Route path="/WelfareMC" element={<WelfareMC />} />
+        <Route path="/Countries" element={<Countries />} />
+
       </Routes>
     </Layout>
   </Router>

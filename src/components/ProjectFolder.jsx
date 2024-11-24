@@ -14,22 +14,22 @@ const projects = [
     icon: "js_icon.svg",
   },
   {
-    name: "Personal finance app",
-    path: "/Personalfinance",
+    name: "PersonalFinanceApp.jsx",
+    path: "/PersonalFinance",
     icon: "react_icon.svg",
   },
   {
-    name: "Audiophile",
+    name: "Audiophile.jsx",
     path: "/Audiophile",
     icon: "react_icon.svg",
   },
   {
-    name: "Walfare MC",
-    path: "/WalfareMC",
+    name: "WalfareMC.jsx",
+    path: "/WelfareMC",
     icon: "react_icon.svg",
   },
   {
-    name: "Countries Api",
+    name: "CountriesApi.js",
     path: "/Countries",
     icon: "js_icon.svg",
   },

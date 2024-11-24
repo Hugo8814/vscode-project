@@ -1,74 +1,76 @@
 import styles from "../styles/Pfa.module.css";
-import pfa2 from "../img/pfa2.png";
-import login from "../img/login.png";
-import Transaction from "../img/Transaction.png";
+import AudiophileHome from "../img/audiophile.png";
+import Cart from "../img/cart.png";
+import payment from "../img/payment.png";
 import githubSvg from "../components/icons/github.svg";
 import linkSvg from "../components/icons/link.svg";
 
 function Audiophile() {
     return (
         <div className={styles.pfa}>
-            <p className={styles.title}>Audiophile</p>
+            <h1 className={styles.title}>Audiophile</h1>
 
-            <div className={styles.linkBox} >
-            
-            <a href="https://audiophile-hugo.netlify.app/" className={styles.link}>
-            View Live
-              <img src={linkSvg} alt="link logo" className={styles.icon}  />
-            </a>
-            
-            <a href="https://github.com/Hugo8814/audiophile"  className={styles.github}>
-             Source Code
-              <img
-                src={githubSvg}
-                alt="github logo"
-                className={styles.icon}
-               
-              />
-            </a>
+            <div className={styles.linkBox}>
+                <a href="https://audiophile-hugo.netlify.app/" className={styles.link} target="_blank" rel="noopener noreferrer">
+                    View Live
+                    <img src={linkSvg} alt="Live site link" className={styles.icon} />
+                </a>
+                <a href="https://github.com/Hugo8814/audiophile" className={styles.github} target="_blank" rel="noopener noreferrer">
+                    Source Code
+                    <img src={githubSvg} alt="GitHub repository link" className={styles.icon} />
+                </a>
             </div>
 
-            <div className={styles.box}>
-                <img src={pfa2} alt="Personal Financial App Screenshot" className={styles.img} />
-                <ul className={styles.desc}>
-                    <h4 className={styles.subtitle}>Overview</h4>
-                    <li className={styles.text}>
-                        A versatile application designed to help users seamlessly manage and track their personal finances.
-                    </li>
-                    <li className={styles.text}>
-                        Offers features like budgeting, expense tracking, and financial planning through an intuitive interface.
-                    </li>
-                    <li className={styles.text}>
-                        Demonstrates my expertise in front-end development, leveraging modern technologies to deliver a smooth and engaging user experience.
-                    </li>
-                </ul>
-            </div>
+            <section className={styles.box}>
+                <img src={AudiophileHome} alt="Audiophile homepage" className={styles.img} />
+                <div>
+                    <h2 className={styles.subtitle}>Overview</h2>
+                    <ul className={styles.desc}>
+                        <li className={styles.text}>
+                            Audiophile is an e-commerce frontend mentor challenge designed for buying and selling audio equipment.
+                        </li>
+                        <li className={styles.text}>
+                            Features include a functional shopping cart and detailed product pages showcasing high-quality audio equipment.
+                        </li>
+                        <li className={styles.text}>
+                            The platform dynamically renders images based on screen size to ensure an optimized experience across devices.
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-            <div className={styles.box}>
-                <ul className={styles.desc}>
-                    <h4 className={styles.subtitle}>Frontend Development</h4>
-                    <li className={styles.text}>
-                        Built with React, utilizing advanced concepts like React Hooks, React Router, and Redux for efficient state management.
-                    </li>
-                    <li className={styles.text}>
-                        Designed and styled with Tailwind CSS, implemented based on a Figma.
-                    </li>
-                </ul>
-                <img src={Transaction} alt="Transaction Management Screenshot" className={styles.img} />
-            </div>
+            <section className={styles.box}>
+                <div>
+                    <h2 className={styles.subtitle}>Frontend Development</h2>
+                    <ul className={styles.desc}>
+                        <li className={styles.text}>
+                            Built using React with modern tools like React Router for navigation and the Context API for state management.
+                        </li>
+                        <li className={styles.text}>
+                            Designed with SASS to ensure maintainable, scalable, and visually appealing styles, based on a Figma design.
+                        </li>
+                        <li className={styles.text}>
+                            Includes a responsive layout with optimized image rendering for different screen sizes.
+                        </li>
+                    </ul>
+                </div>
+                <img src={Cart} alt="Audiophile shopping cart interface" className={styles.img} />
+            </section>
 
-            <div className={styles.box}>
-                <img src={login} alt="Login Page Screenshot" className={styles.img} />
-                <ul className={styles.desc}>
-                    <h4 className={styles.subtitle}>Backend Development</h4>
-                    <li className={styles.text}>
-                        The backend is powered by Node.js and Express.js, providing a robust RESTful API for seamless communication with the database.
-                    </li>
-                    <li className={styles.text}>
-                        MongoDB was chosen for its scalability, flexibility, and ability to handle large volumes of semi-structured data effectively.
-                    </li>
-                </ul>
-            </div>
+            <section className={styles.box}>
+                <img src={payment} alt="Audiophile form validation example" className={styles.img} />
+                <div>
+                    <h2 className={styles.subtitle}>User Interaction</h2>
+                    <ul className={styles.desc}>
+                        <li className={styles.text}>
+                            The platform includes interactive features such as form validation to enhance the user experience.
+                        </li>
+                        <li className={styles.text}>
+                            The checkout process is designed to demonstrate the flow of an e-commerce payment system, showcasing a clean and intuitive design.
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
     );
 }
