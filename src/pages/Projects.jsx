@@ -1,8 +1,7 @@
 import styles from "../styles/Projects.module.css";
 
 import audiophile from "../img/audiophile.png";
-import githubSvg from "../components/icons/github.svg";
-import linkSvg from "../components/icons/link.svg";
+
 //import countryApi from "../img/countryApi.png";
 import jsSVG from "../components/icons/js.svg";
 import sassSVG from "../components/icons/sass.svg";
@@ -18,11 +17,15 @@ import mongoSVG from "../components/icons/mongo.svg";
 import img2 from "../img/im2.png";
 import wmc from "../img/wmc.png";
 import pfa from "../img/pfa.png";
+import { Link } from "react-router-dom";
 
 function Projects() {
   return (
     <div className={styles.container}>
-      <div className={styles.projects}>
+
+
+
+      <Link to="/PersonalFinance" className={styles.projects}>
         <div className={styles.title}>Personal finance app 🏆</div>
 
         <div className={styles.box}>
@@ -66,9 +69,9 @@ function Projects() {
           </div>
          
         </div>
-      </div>
+      </Link>
 
-      <div className={styles.projects}>
+      <Link to="/Audiophile" className={styles.projects}>
         <div className={styles.title}>Audiophile e-com</div>
         <div className={styles.box}>
           <img
@@ -76,18 +79,7 @@ function Projects() {
             src={audiophile}
             alt="project img"
           />
-          <div className={styles.overlay}>
-            <a href="https://audiophile-hugo.netlify.app/" className="btn">
-              <img src={linkSvg} alt="link logo" className={styles.link} />
-            </a>
-            <a href="https://github.com/Hugo8814/audiophile" className="btn">
-              <img
-                src={githubSvg}
-                alt="github logo"
-                className={styles.github}
-              />
-            </a>
-          </div>
+          
         </div>
         <div className={styles.skillsGrid}>
           <div className={styles.skills}>
@@ -107,8 +99,8 @@ function Projects() {
             <img className={styles.skillsimg} src={reactSVG} alt="" />
           </div>
         </div>
-      </div>
-      <div className={styles.projects}>
+      </Link>
+      <Link to="/WelfareMC" className={styles.projects}>
         <div className={styles.title}>Walfare MC</div>
         <div className={styles.box}>
           <img
@@ -116,18 +108,7 @@ function Projects() {
             src={wmc}
             alt="project img"
           />
-          <div className={styles.overlay}>
-            <a href="https://www.welfaremc.co.uk/" className="btn">
-              <img src={linkSvg} alt="link logo" className={styles.link} />
-            </a>
-            <a href="https://github.com/Hugo8814/WMC" className="btn">
-              <img
-                src={githubSvg}
-                alt="github logo"
-                className={styles.github}
-              />
-            </a>
-          </div>
+         
         </div>
         <div className={styles.skillsGrid}>
           <div className={styles.skills}>
@@ -147,26 +128,12 @@ function Projects() {
             <img className={styles.skillsimg} src={reactSVG} alt="" />
           </div>
         </div>
-      </div>
-      <div className={styles.projects}>
+      </Link>
+      <Link to="/Countries" className={styles.projects}>
         <div className={styles.title}>Countries Api</div>
         <div className={styles.box}>
           <img className={styles.projectsImg} src={img2} alt="project img" />
-          <div className={styles.overlay}>
-            <a href="https://countries-api-hugo.netlify.app/" className="btn">
-              <img src={linkSvg} alt="link logo" className={styles.link} />
-            </a>
-            <a
-              href="https://github.com/Hugo8814/rest-countries-api-with-color-theme-switcher-master"
-              className="btn"
-            >
-              <img
-                src={githubSvg}
-                alt="github logo"
-                className={styles.github}
-              />
-            </a>
-          </div>
+         
         </div>
         <div className={styles.skillsGrid}>
           <div className={styles.skills}>
@@ -183,7 +150,7 @@ function Projects() {
             <img className={styles.skillsimg} src={sassSVG} alt="" />
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
