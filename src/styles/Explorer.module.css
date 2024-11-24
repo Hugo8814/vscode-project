@@ -4,7 +4,14 @@
   color: rgb(225, 228, 232);
   font-family: "Source Sans Pro", sans-serif;
   border-right: 1px solid var(--explorer-border);
-  overflow-y: auto;
+  
+  
+  
+}
+@media screen and (max-width: 1700px) {
+ .explorer{
+  overflow-y:auto;
+ }
   
 }
 
