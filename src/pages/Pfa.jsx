@@ -38,7 +38,7 @@ function Pfa() {
                         Offers features like budgeting, expense tracking, and financial planning through an intuitive interface.
                     </li>
                     <li className={styles.text}>
-                        Demonstrates my skiils in front-end development, leveraging modern technologies to deliver a smooth and engaging user experience.
+                        Demonstrates my skills in front-end development, leveraging modern technologies to deliver a smooth and engaging user experience.
                     </li>
                 </ul>
             </div>
