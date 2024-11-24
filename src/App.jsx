@@ -27,10 +27,10 @@ function ScrollToTop() {
 
     return null; // This component doesn't render anything
 }
-ScrollToTop()
 
 const App = () => (
   <Router>
+    <ScrollToTop /> {/* Place this here */}
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -42,7 +42,6 @@ const App = () => (
         <Route path="/Audiophile" element={<Audiophile />} />
         <Route path="/WelfareMC" element={<WelfareMC />} />
         <Route path="/Countries" element={<Countries />} />
-
       </Routes>
     </Layout>
   </Router>
