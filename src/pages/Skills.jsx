@@ -5,6 +5,7 @@ import reactCert from "../img/reactCert.png";
 import FDreactCert from "../img/fdReact.png";
 import psb from "../img/psb.png";
 
+
 import jsSVG from "../components/icons/js.svg";
 import sassSVG from "../components/icons/sass.svg";
 import htmlSVG from "../components/icons/html-5.svg";
