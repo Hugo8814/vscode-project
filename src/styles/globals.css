@@ -9,7 +9,7 @@
   font-size: 105%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   *,
   *::before,
   *::after {
@@ -18,7 +18,7 @@
 }
 
 /* Small screens (decrease more) */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   *,
   *::before,
   *::after {

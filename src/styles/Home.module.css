@@ -98,7 +98,7 @@
   ); /* Move the button down to simulate being pressed */
   box-shadow: inset 0 2px 4px white; /* Inner shadow to simulate depth */
 }
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   .title1 {
     font-size: 2rem;
     text-align: start;

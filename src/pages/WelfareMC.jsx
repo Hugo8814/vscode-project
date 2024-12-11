@@ -77,7 +77,6 @@ function WelfareMC() {
                         <li className={styles.text}>
                             The site focuses on simplicity and ease of use to enhance user experience.
                         </li>
-                       
                     </ul>
                 </div>
             </section>
