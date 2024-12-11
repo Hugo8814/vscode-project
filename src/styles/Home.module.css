@@ -98,6 +98,22 @@
   ); /* Move the button down to simulate being pressed */
   box-shadow: inset 0 2px 4px white; /* Inner shadow to simulate depth */
 }
+@media (max-width: 1300px) {
+  .title1 {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .title2 {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .contactButton {
+    font-size: 1.2rem;
+  }
+  .viewButton {
+    font-size: 1.2rem;
+  }
+}
 @media (max-width: 950px) {
   .title1 {
     font-size: 2rem;
@@ -124,7 +140,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .title {
     padding: 0;
   }
