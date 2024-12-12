@@ -8,7 +8,7 @@ import linkSvg from "../components/icons/link.svg";
 function Countries() {
     return (
         <div className={styles.pfa}>
-            <p className={styles.title}>Personal Financial App</p>
+            <p className={styles.title}>Countries API</p>
 
             <div className={styles.linkBox}>
                 <a
