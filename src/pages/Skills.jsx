@@ -5,7 +5,6 @@ import reactCert from "../img/reactCert.png";
 import FDreactCert from "../img/fdReact.png";
 import psb from "../img/psb.png";
 
-
 import jsSVG from "../components/icons/js.svg";
 import sassSVG from "../components/icons/sass.svg";
 import htmlSVG from "../components/icons/html-5.svg";
@@ -16,6 +15,9 @@ import sassCert from "../img/sassCert.jpg";
 import reduxSVG from "../components/icons/redux.svg";
 import tailwindSVG from "../components/icons/tailwind.svg";
 import figmaSVG from "../components/icons/figma.svg";
+import nodeJSSVG from "../components/icons/nodejs.svg";
+import expressSVG from "../components/icons/express.svg";
+import mongoSVG from "../components/icons/mongo.svg";
 
 function Skills() {
   return (
@@ -57,6 +59,18 @@ function Skills() {
         <div className={styles.skills}>
           <div className={styles.skillLabel}>Git</div>
           <img className={styles.skillsimg} src={gitSVG} alt="Git" />
+        </div>
+        <div className={styles.skills}>
+          <div className={styles.skillLabel}>Node.js</div>
+          <img className={styles.skillsimg} src={nodeJSSVG} alt="Node.js" />
+        </div>
+        <div className={styles.skills}>
+          <div className={styles.skillLabel}>Express</div>
+          <img className={styles.skillsimg} src={expressSVG} alt="Express" />
+        </div>
+        <div className={styles.skills}>
+          <div className={styles.skillLabel}>MongoDB</div>
+          <img className={styles.skillsimg} src={mongoSVG} alt="MongoDB" />
         </div>
       </div>
 

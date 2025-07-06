@@ -13,11 +13,10 @@ import Pfa from "./pages/Pfa";
 import Audiophile from "./pages/Audiophile";
 import WelfareMC from "./pages/WelfareMC";
 import Countries from "./pages/Countries";
-
+import QuidTracker from "./pages/QuidTracker";
 
 const App = () => (
   <Router>
-    
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -29,6 +28,7 @@ const App = () => (
         <Route path="/Audiophile" element={<Audiophile />} />
         <Route path="/WelfareMC" element={<WelfareMC />} />
         <Route path="/Countries" element={<Countries />} />
+        <Route path="/QuidTracker" element={<QuidTracker />} />
       </Routes>
     </Layout>
   </Router>

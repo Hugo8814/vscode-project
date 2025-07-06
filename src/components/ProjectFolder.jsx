@@ -5,9 +5,7 @@ import ChevronRight from "../components/icons/ChevronRight";
 import styles from "../styles/Folder.module.css";
 import folder from "../components/icons/folder.svg";
 
-
 const projects = [
-  
   {
     name: "OverviewProjects.js",
     path: "/projects",
@@ -29,12 +27,10 @@ const projects = [
     icon: "react_icon.svg",
   },
   {
-    name: "CountriesApi.js",
-    path: "/Countries",
-    icon: "js_icon.svg",
+    name: "QuidTracker.jsx",
+    path: "/quidtracker",
+    icon: "react_icon.svg",
   },
-
-  
 ];
 
 const ProjectFolder = () => {
@@ -42,7 +38,6 @@ const ProjectFolder = () => {
 
   return (
     <div className={styles.Folder}>
-      
       <div className="styles.Foldericon">
         <input
           type="checkbox"
@@ -51,16 +46,16 @@ const ProjectFolder = () => {
           checked={portfolioOpen2}
           onChange={() => setPortfolioOpen2(!portfolioOpen2)}
         />
-        
+
         <label htmlFor="portfolio-checkbox2" className={styles.heading}>
           <ChevronRight
             className={styles.chevron}
             style={portfolioOpen2 ? { transform: "rotate(90deg)" } : {}}
           />
           <div className={styles.Foldericon}>
-        <img src={folder}  />
-        </div>
-           Projects
+            <img src={folder} />
+          </div>
+          Projects
         </label>
         <div
           className={styles.files}
@@ -77,7 +72,6 @@ const ProjectFolder = () => {
               <p className={styles.filename}>{item.name}</p>
             </Link>
           ))}
-          
         </div>
       </div>
     </div>
