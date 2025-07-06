@@ -51,7 +51,7 @@ function About() {
               <span className={styles.lineNumber}>7</span>
               <span className={styles.tag}>&lt;p&gt;</span>
               <span className={styles.plain}>
-                Hello! I’m Hugo Pereira, a 21-year-old self-taught front-end
+                Hello! I’m Hugo Pereira, a 21-year-old self-taught front-end 
                 developer born in Brazil and raised in the UK, where I’ve been
                 living for the past 15 years. I embarked on my web development
                 journey in March 2023 and instantly developed a deep passion for

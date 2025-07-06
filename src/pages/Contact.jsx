@@ -22,11 +22,6 @@ const contactItems = [
     link: "hugopereira8814",
     href: "https://leetcode.com/u/hugopereira8814/",
   },
-  {
-    social: "HackerRank",
-    link: "@hugopereira8814",
-    href: "https://www.hackerrank.com/profile/hugopereira8814",
-  },
 ];
 
 function Contact() {
@@ -59,5 +54,3 @@ function Contact() {
 }
 
 export default Contact;
-
-

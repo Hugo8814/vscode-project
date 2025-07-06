@@ -14,7 +14,7 @@ import nodejsSVG from "../components/icons/nodejs.svg";
 import expressSVG from "../components/icons/express.svg";
 import mongoSVG from "../components/icons/mongo.svg";
 
-import img2 from "../img/im2.png";
+import img2 from "../img/quidtracker.png";
 import wmc from "../img/wmc.png";
 import pfa from "../img/pfa.png";
 import { Link } from "react-router-dom";
@@ -22,20 +22,10 @@ import { Link } from "react-router-dom";
 function Projects() {
   return (
     <div className={styles.container}>
-
-
-
-      <Link to="/PersonalFinance" className={styles.projects}>
-        <div className={styles.title}>Personal finance app 🏆</div>
-
+      <Link to="/QuidTracker" className={styles.projects}>
+        <div className={styles.title}>🏆 Quid Tracker 🏆</div>
         <div className={styles.box}>
-          <img
-            className={`${styles.projectsImg} `}
-            src={pfa}
-            alt="project img"
-          />
-
-          
+          <img className={styles.projectsImg} src={img2} alt="project img" />
         </div>
         <div className={styles.skillsGrid}>
           <div className={styles.skills}>
@@ -67,7 +57,49 @@ function Projects() {
           <div className={styles.skills}>
             <img className={styles.skillsimg} src={mongoSVG} alt="" />
           </div>
-         
+        </div>
+      </Link>
+
+      <Link to="/PersonalFinance" className={styles.projects}>
+        <div className={styles.title}>Personal finance app </div>
+
+        <div className={styles.box}>
+          <img
+            className={`${styles.projectsImg} `}
+            src={pfa}
+            alt="project img"
+          />
+        </div>
+        <div className={styles.skillsGrid}>
+          <div className={styles.skills}>
+            <img className={styles.skillsimg} src={htmlSVG} alt="" />
+          </div>
+          <div className={styles.skills}>
+            <img className={styles.skillsimg} src={cssSVG} alt="" />
+          </div>
+          <div className={styles.skills}>
+            <img className={styles.skillsimg} src={tailwindSVG} alt="" />
+          </div>
+
+          <div className={styles.skills}>
+            <img className={styles.skillsimg} src={jsSVG} alt="" />
+          </div>
+          <div className={styles.skills}>
+            <img className={styles.skillsimg} src={reactSVG} alt="" />
+          </div>
+          <div className={styles.skills}>
+            <img className={styles.skillsimg} src={reduxSVG} alt="" />
+          </div>
+          <div className={styles.skills}>
+            <img className={styles.skillsimg} src={nodejsSVG} alt="" />
+          </div>
+          <div className={styles.skills}>
+            <img className={styles.skillsimg} src={expressSVG} alt="" />
+          </div>
+
+          <div className={styles.skills}>
+            <img className={styles.skillsimg} src={mongoSVG} alt="" />
+          </div>
         </div>
       </Link>
 
@@ -79,7 +111,6 @@ function Projects() {
             src={audiophile}
             alt="project img"
           />
-          
         </div>
         <div className={styles.skillsGrid}>
           <div className={styles.skills}>
@@ -108,7 +139,6 @@ function Projects() {
             src={wmc}
             alt="project img"
           />
-         
         </div>
         <div className={styles.skillsGrid}>
           <div className={styles.skills}>
@@ -126,28 +156,6 @@ function Projects() {
           </div>
           <div className={styles.skills}>
             <img className={styles.skillsimg} src={reactSVG} alt="" />
-          </div>
-        </div>
-      </Link>
-      <Link to="/Countries" className={styles.projects}>
-        <div className={styles.title}>Countries Api</div>
-        <div className={styles.box}>
-          <img className={styles.projectsImg} src={img2} alt="project img" />
-         
-        </div>
-        <div className={styles.skillsGrid}>
-          <div className={styles.skills}>
-            <img className={styles.skillsimg} src={htmlSVG} alt="" />
-          </div>
-          <div className={styles.skills}>
-            <img className={styles.skillsimg} src={cssSVG} alt="" />
-          </div>
-
-          <div className={styles.skills}>
-            <img className={styles.skillsimg} src={jsSVG} alt="" />
-          </div>
-          <div className={styles.skills}>
-            <img className={styles.skillsimg} src={sassSVG} alt="" />
           </div>
         </div>
       </Link>
